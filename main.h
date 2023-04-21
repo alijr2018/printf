@@ -1,7 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
+
+
+#include<stddef.h>
 #include <stdarg.h>
 #include <stdio.h>
+<<<<<<< HEAD
 #include <unistd.h>
 
 #define UNUSED(x) (void)(x)
@@ -39,6 +43,8 @@ struct fmt
  */
 typedef struct fmt fmt_t;
 
+=======
+>>>>>>> 6ef57ef2e3032b8f26cc2ff7a3f36d4d0d13afbf
 int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);
