@@ -12,6 +12,7 @@
  */
 int _printf(const char *format, ...)
 {
+	
 	int (*pfunc)(va_list, flags_t *);
 	const char *p;
 	va_list arguments;
