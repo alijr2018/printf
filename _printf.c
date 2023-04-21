@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 			p++;
 			if (*p == '%')
 			{
-				count += _putchar('%');
+				count += putchar('%');
 				continue;
 			}
 			while (get_flag(*p, &flags))
@@ -42,9 +42,9 @@ int _printf(const char *format, ...)
 				? pfunc(arguments, &flags)
 				: _printf("%%%c", *p);
 		} else
-			count += _putchar(*p);
+			count += putchar(*p);
 	}
-	_putchar(-1);
+	putchar(-1);
 	va_end(arguments);
 	return (count);
 
